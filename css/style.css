@@ -3,7 +3,9 @@
 Colors used:
 
 */
-
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #cccccc;
   font-family: 'Halant', sans-serif;
@@ -52,11 +54,22 @@ a:focus {
   text-decoration: underline;
 }
 
+header {
+  background-color: #F9D7D1;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #466675;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.95);
+  -moz-box-shadow:    0px 2px 12px 0px rgba(50, 50, 50, 0.95);
+  box-shadow:         0px 2px 12px 0px rgba(50, 50, 50, 0.95);
+  position: relative;
+}
 
 
 .button {
   display: inline-block;
-  background-color: #FAC8BF;
+  background-color: #BAF5F4;
   color: #466675;
   font-weight: 400;
   padding: 10px;
@@ -77,6 +90,73 @@ a:focus {
 }
 
 .button.contact:hover {
-  background-color: #FAC8BF;
+  background-color: #BAF5F4;
   color: #466675;
+}
+
+
+/* Layout styling */
+
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#body h1 {
+  text-align: center; /* Centers text */
+}
+
+.logo {
+  max-width: 250px;
+  text-align: center;
+}
+
+#logo {
+  text-align: center;
+}
+
+#contact {
+    text-align: center;
+    background-color: #F9D7D1;
+    padding: 20px 0;
+    margin-top: 10px;
+      display: inline-block;
+      width: 100%;
+        text-align: center;
+  }
+}
+
+/* navigation */
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav> ul> li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #466675;
+}
+
+nav > ul> li> a:visited {
+  color: #6A8D9D;
+}
+
+/* hero */
+
+#hero {
+  background-color: #F9D7D1;
+  padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+      text-align: center;
 }
