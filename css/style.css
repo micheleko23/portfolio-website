@@ -1,8 +1,4 @@
 
-/*
-Colors used:
-
-*/
 * {
   box-sizing: border-box;
 }
@@ -19,7 +15,8 @@ h1, h2, h3, h4 {
   line-height: 1.4
 }
 h1 {font-size: 2.75em;
-font-weight: 700}
+font-weight: 700
+}
 
 h2 {font-size: 2.25em;
 font-weight: 600}
@@ -66,6 +63,14 @@ header {
   position: relative;
 }
 
+.h1heading {
+  text-align: center;
+}
+
+.moduraprojectpic {
+  border-bottom: 3px solid #466675;
+}
+
 
 .button {
   display: inline-block;
@@ -75,7 +80,8 @@ header {
   padding: 10px;
   border-radius: 3px;
   border: 2px solid;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+    transition-property: opacity;
 }
 .button:hover {
   opacity: 0.8;
@@ -87,6 +93,8 @@ header {
   color: #466675;
   text-transform: uppercase;
   border: 2px solid #466675;
+  transition-duration: 0.2s;
+    transition-property: opacity;
 }
 
 .button.contact:hover {
@@ -104,6 +112,7 @@ header {
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  text-align: center;
 }
 
 #body h1 {
@@ -115,8 +124,9 @@ header {
 }
 
 .logoimage{
-  max-width: 250px;
-  text-align: center;
+  max-width: 50px;
+  float: left;
+
 }
 
 #contact {
@@ -163,4 +173,149 @@ nav > ul> li> a:visited {
     display: inline-block;
     width: 100%;
       text-align: center;
+}
+
+/* floating */
+
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
+}
+
+.logo {
+  text-align: unset;
+}
+
+.logoimage{
+    text-align: unset;
+    margin: auto;
+}
+nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+  width: 50%;
+}
+
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+  .col-lg-7 {
+  width: 60%;
+}
+
+.col-lg-5 {
+width: 40%;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+
+
+/*Animation */
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+ 50% {fill: #fcffad;}
+ 100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+/*Navigation animation */
+/* Border from Y to X  */
+div.borderYtoX a:before, div.borderYtoX a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: "";
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
 }
