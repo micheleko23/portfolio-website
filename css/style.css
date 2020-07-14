@@ -148,6 +148,7 @@ nav > ul {
   width: 100%;
   text-align: center;
     display: inline-block;
+    margin: 0;
 }
 
 
@@ -192,6 +193,11 @@ nav > ul> li> a:visited {
   right: 0;
   top: 2px;
   font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
 }
 
 .container {
@@ -214,6 +220,9 @@ Medium devices (640px and larger)
 nav> ul> li {
   display: inline-block;
 }
+nav > ul {
+  margin: 1em 0;
+}
 
 .navtoggle li:not(:last-child) {
   display: inline-block;
@@ -235,7 +244,7 @@ nav {
     width: auto;
     float: right;
     margin-top: 4px;
-      display: inline-block;
+
   }
 
   .col-md-6 {
