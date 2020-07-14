@@ -28,7 +28,7 @@ h4 {font-size: 1.35em;
 font-weight: 400}
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -53,9 +53,9 @@ a:focus {
 
 header {
   background-color: #F9D7D1;
-  padding: 10px;
+  padding: 5px;
   margin: 10px;
-  border-bottom: 3px solid #466675;
+
   -webkit-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.95);
   -moz-box-shadow:    0px 2px 12px 0px rgba(50, 50, 50, 0.95);
   box-shadow:         0px 2px 12px 0px rgba(50, 50, 50, 0.95);
@@ -107,9 +107,7 @@ header {
 /* Layout styling */
 
 
-.container {
-  padding: 0 15px;
-}
+
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
@@ -120,14 +118,12 @@ header {
   text-align: center; /* Centers text */
 }
 
-.logo {
-  text-align: center;
-}
+
 
 .logoimage{
-  max-width: 50px;
-  float: left;
-
+  max-width: 100px;
+  text-align: unset;
+  margin: auto;
 }
 
 #contact {
@@ -150,6 +146,8 @@ nav > ul {
   list-style-type: none;
   padding: 0;
   width: 100%;
+  text-align: center;
+    display: inline-block;
 }
 
 
@@ -158,6 +156,7 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 700;
   color: #466675;
+  display: inline-block;
 }
 
 nav > ul> li> a:visited {
@@ -167,11 +166,14 @@ nav > ul> li> a:visited {
 /* hero */
 
 #hero {
-  background-color: #F9D7D1;
+  /*background-color: #F9D7D1;*/
   padding: 20px 0;
+  margin-top: 20px;
     display: inline-block;
     width: 100%;
       text-align: center;
+      border-bottom:  3px solid #466675;
+      border-top:  3px solid #466675;
 }
 
 
@@ -192,6 +194,9 @@ nav > ul> li> a:visited {
   font-size: 20px;
 }
 
+.container {
+    overflow: auto;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -224,15 +229,18 @@ nav> ul> li {
 .logoimage{
     text-align: unset;
     margin: auto;
+    float: left;
 }
 nav {
     width: auto;
     float: right;
     margin-top: 4px;
+      display: inline-block;
   }
 
   .col-md-6 {
   width: 50%;
+  text-align: left;
 
 }
 
@@ -252,6 +260,7 @@ Large devices (1024px or larger)
 
   .col-lg-7 {
   width: 60%;
+    text-align: left;
 }
 
 .col-lg-5 {
@@ -263,8 +272,12 @@ width: 40%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  overflow: auto;
 }
-
+.logoimage{
+    text-align: unset;
+    margin: auto;
+    float: left;
 }
 /* ==============================
 X-large devices (1440px or larger)
