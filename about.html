@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head id="header">
-    <script src="https://use.fontawesome.com/0e6f996e0c.js"></script>
+  <script src="https://use.fontawesome.com/0e6f996e0c.js"></script>
   <meta charset="utf-8">
   <title> About Michele </title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -14,20 +14,22 @@
 <body id="body">
   <header id="header">
     <div class="container">
-          <div class="navtoggle" id="myNavtoggle">
-      <div class="logoimage">
-        <a href="index.html"> <img src="img/logo.png" alt="Michele logo"> </a>
+      <div class="navtoggle" id="myNavtoggle">
+        <div class="logoimage">
+          <a href="index.html"> <img src="img/logo.png" alt="Michele logo"> </a>
+        </div>
+        <div class="borderYtoX">
+          <nav>
+            <ul>
+              <li><a href="index.html"> Work </a></li>
+              <li><a href="about.html"> About </a></li>
+              <li><a href="#contact"> <onclick="menuToggle()"> Contact </a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html"> Work </a></li>
-          <li><a href="about.html"> About </a></li>
-          <li><a href="#contact"> Contact </a></li>
-                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa fa-bars"></i></a></li>
-        </ul>
-      </nav>
     </div>
-  </div>
   </header>
 
   <main>
@@ -53,33 +55,59 @@
             high school, summer school and related extracurricular activities whenever possible throughout school and university. I discovered UX design in 2019 and believe that becoming an interaction designer would be the ideal job for me due to
             the combination of design thinking, psychology and empathy, and have since taken multiple courses to gain experience and transition into the field.
           </p>
-          <a href="files/cv.pdf" target="_blank" class="button"> See my CV </a>
-
-          <h3> Fun facts </h3>
+          <h3> Interests </h3>
           <p>
-          <ul>
+            I have a keen interest in health and wellness and am studying to obtain a nutrition certification in my free time. You will frequently find me at gym studios across the city trying out a range of random workouts.
+            I am also learning to play the ukulele and I love playing board games and video games with family and friends, especially if it is a competitive round of Overcooked. </p>
 
-            <li> I have a keen interest in health and wellness and am studying to obtain a nutrition certification in my free time. After work you will find me at gym studios across the city trying out a range of random workouts! </li>
-            <li>I am learning to play the ukulele. </li>
-            <li>I love playing board games and video games with family and friends, especially playing a competitive round of Overcooked. </li>
-          </ul>
-          </p>
+
         </div>
       </div>
 
+      <div>
+        <div class="row">
+          <h2> Education and Experience </h2>
+        </div>
+
+    <div class="row">
+        <div class="col-md-6 col-lg-7">
+          <h3> Education </h3>
+          <u1>
+            <li> Postgraduate Diploma in Legal Practice (Distinction) - 2015 to 2016 </li>
+            <li> Bachelor of Laws (Hons) (2:1) - 2012 to 2015 </li>
+            <li> International Baccalaureate Diploma (43) - 2010 to 2012 </li>
+          </u1>
+        </div>
+
+        <div class="col-md-6 col-lg-5">
+          <h3> Experience </h3>
+          <u1>
+            <li> Capital Markets Associate at Latham & Watkins LLP (London) - 2018 to 2019 </li>
+            <li> Trainee Solicitor at Latham & Watkins LLP (Singapore) - 2016 to 2018 </li>
+          </u1>
+        </div>
+</div>
+<div class = "cv">
+  <a href="files/cv.pdf" target="_blank" class="button"> View my CV </a>
+</div>
+      </div>
+
+      <div>
         <div class="row">
           <h2> Skills and Tools </h2>
         </div>
 
+    <div class="row">
         <div class="col-md-6 col-lg-7">
           <h3> Relevant Skills </h3>
           <u1>
-            <li> Empathetic and friendly – I have always been sensitive to the feelings of the people around me, and am interested in learning about the origins, thought process and reasoning behind their emotions. In UX design, this has helped me
+            <li> Empathetic and friendly – Sensitive to the feelings of the people around me, and interested in learning about the origins, thought process and reasoning behind their emotions. In UX design, this has helped me
               foresee user frustrations and create better and more enjoyable experiences. </li>
-            <li> Collaborative and social – I am naturally a bubbly and social person, and my previous job was project-based so I have plenty of experience working in a team. I enjoy the camaraderie of group work, and am very receptive to taking in
+            <li> Collaborative and social – Naturally a bubbly and social person with significant project-based experience working in a team. I enjoy the camaraderie of group work, and am very receptive to taking in
               feedback and reiterating on work products. </li>
             <li> Client management – As an ex-lawyer, I am able to multitask and manage expectations and maintain good relations among many stakeholders at a time. I have also interacted with a variety of international clients and have become
               culturally aware of when work style needs to be adapted to suit different types of clients or team members. </li>
+            <li> Experienced researcher - Trained to sift through and analyze vast quantities of data, information and documents in a short amount of time to highlight important issues and considerations for clients.</li>
           </u1>
         </div>
 
@@ -92,18 +120,17 @@
             <li> Javascript </li>
             <li> Balsamiq </li>
             <li> Sketch-up </li>
+            <li> Microsoft Office </li>
           </u1>
         </div>
-
+</div>
+      </div>
 
 
 
     </div>
   </main>
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 

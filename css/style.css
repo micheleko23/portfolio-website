@@ -113,7 +113,7 @@ header {
 
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 20px 0; /* 25px top and bottom, 0 left and right */
   text-align: center;
 }
 
@@ -121,7 +121,9 @@ header {
   text-align: center; /* Centers text */
 }
 
-
+.cv {
+  text-align: center;
+}
 
 .logoimage{
   max-width: 100px;
@@ -347,6 +349,13 @@ X-large devices (1440px or larger)
 
 /*Navigation animation */
 /* Border from Y to X  */
+
+.borderYtoX {
+
+  padding-top:10px;
+}
+
+
 div.borderYtoX a:before, div.borderYtoX a:after
 {
     position: absolute;
