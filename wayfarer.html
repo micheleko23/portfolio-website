@@ -54,19 +54,104 @@
           <p> I designed (i) a sign in/sign up screen, (ii) a list of destinations home page, (iii) "detail" screens giving information about a certain destination and (iv) a "search" screen. </p>
 
         </div>
-
+<!-- Old Wayfarer presentation
         <div>
           <picture>
             <source srcset="img/wayfarer/wayfarermobile.jpg" media="(max-width:767px)">
             <img src="img/wayfarer/wayfarermobile.jpg" alt="Wayfarer Mobile">
           </picture>
         </div>
+-->
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+          <div class="column">
+            <img src="img/wayfarer/img1.jpg" alt = "Page 1" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="img/wayfarer/img2.jpg" alt = "Page 2"  onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="img/wayfarer/img3.jpg" alt = "Page 3" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="img/wayfarer/img4.jpg" alt = "Page 4" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="img/wayfarer/img5.jpg" alt = "Page 5" onclick="openModal();currentSlide(5)" class="hover-shadow">
+          </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 5</div>
+              <img src="img/wayfarer/img1.jpg" alt = "Page 1" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 5</div>
+              <img src="img/wayfarer/img2.jpg" alt = "Page 2" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 5</div>
+              <img src="img/wayfarer/img3.jpg" alt = "Page 3" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 5</div>
+              <img src="img/wayfarer/img4.jpg" alt = "Page 4" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 5</div>
+              <img src="img/wayfarer/img5.jpg" alt = "Page 5"  style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+              <img class="demo" src="img/wayfarer/img1.jpg" onclick="currentSlide(1)" alt="Page 1">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="img/wayfarer/img2.jpg" onclick="currentSlide(2)" alt="Page 2">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="img/wayfarer/img3.jpg" onclick="currentSlide(3)" alt="Page 3">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="img/wayfarer/img4.jpg" onclick="currentSlide(4)" alt="Page 4">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="img/wayfarer/img5.jpg" onclick="currentSlide(5)" alt="Page 5">
+            </div>
+          </div>
+        </div>
+
+
+
+
         <div>
           <h2> The Desktop Landing Page </h2>
           <p> I then designed a responsive desktop landing page, making sure to coordinate the design elements with the mobile application design. I included navigation elements and call-to-action buttons necessary for a standard landing page.
         </div>
 
-        <div>
+        <div class = "wayfarerdesktop">
           <picture>
             <source srcset="img/wayfarer/wayfarerdesktop.jpg" media="(max-width:767px)">
             <img src="img/wayfarer/wayfarerdesktop.jpg" alt="Wayfarer Desktop">
